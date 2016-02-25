@@ -1,7 +1,7 @@
 library(shiny)
 
 shinyUI(pageWithSidebar(  
-headerPanel("Correlation of HP to MPG for Different cyl and transmission types "),  
+headerPanel("Visualisation of HP to MPG for Different cylinders and transmission types from the Motor trends data set"),  
 sidebarPanel(    
     radioButtons("cyl", "Number of cylinders:",
            c("4 cylinders" = "4",

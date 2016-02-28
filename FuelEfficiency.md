@@ -22,7 +22,7 @@ A trend line is then drawn to see if there is some correlection within the resul
 The Cars
 ========================================================
 The mtcars data comprises the follwing cars that were used in the comparison
-
+<small>
 
 ```r
 data(mtcars)
@@ -42,6 +42,8 @@ rownames(mtcars)
 [28] "Lotus Europa"        "Ford Pantera L"      "Ferrari Dino"       
 [31] "Maserati Bora"       "Volvo 142E"         
 ```
+</small>
+
 
 Overall view of HP to MPG
 ========================================================

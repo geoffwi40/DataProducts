@@ -1,0 +1,47 @@
+Comparing Fuel Efficiency of cars based upon the number of cylinders and tranmission type
+========================================================
+author: Geoff Williams  
+date: 28/2/2016
+autosize: true
+
+Introduction
+========================================================
+The Application is available from
+
+https://geoffwi40.shinyapps.io/DataProducts/
+
+Using data from the Motor Trend US magazine included with the "R" distribution, the tool shows
+the relationship between Horse Power and Miles per Gallon for different cars according to: 
+
+The app visualises the realtionship based upon differnt combinations of :
+- Cylinder numbers
+- Transmission type
+
+A trend line is then drawn to see if there is some correlection within the results
+
+The Cars
+========================================================
+The mtcars data comprises the follwing cars that were used in the comparison
+
+```{r}
+data(mtcars)
+rownames(mtcars)
+```
+
+Overall view of HP to MPG
+========================================================
+If we look at overall whether their seems to be a relationhsip with HP to MPG, there seems to be negative correlation
+
+```{r, echo=FALSE}
+library(ggplot2)
+ggplot(mtcars,aes(x=mpg,y=hp))+ geom_point() + stat_smooth(method = "lm", col = "red")
+```
+
+Using the Tool
+========================================================
+If we then use the toolk we can then look further into seeing whether this relationship 
+still holds for the various cylinder and transmission types
+
+https://geoffwi40.shinyapps.io/DataProducts/
+
+![Screen Shot](assignmentScreenshot.png)
